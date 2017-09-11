@@ -1,0 +1,291 @@
+#main{
+	position: relative;
+	width: 100%;
+	margin-bottom: 10px;
+	background-color: #ededed;
+}
+
+#intro1{
+	font-weight: bold;
+	font-size: 50px;
+
+}
+
+#intro2{
+	font-size: 28px;
+}
+
+#forMob{
+    	display: none;
+    }
+#forDesktop{
+    	display: flex;
+    	padding: 30px;
+    }
+#mainMenu-mobile{
+	width: calc(100% - 10px);
+	position: fixed;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+	margin-top: 5px;
+	z-index: 10;
+}
+#mainMenu-mobile div div{
+	width: 20%;
+}
+#resumeBody{
+	position: relative;
+	left: 100px;
+	width:calc(100% - 100px);
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+}
+.listitems{
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 4px;
+	background-color: #08aeac;
+}
+
+.jumpTo{
+	width: 100%
+}
+.menuLink{
+	display: block;
+	width: 100px;
+	padding: 10px;
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+.resumePages{
+	background: white;
+	margin-bottom: 10px;
+	padding: 30px 30px;
+	position: relative;
+}
+.resumePages h1{
+	font-weight: bold;
+	font-size: 30px;
+	color: #19a5a3;
+
+}
+#experience div,#education div{
+	border-style: outset;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+#experience div h1,#education div h1{
+	font-weight: bold;
+	font-size: 28px;
+}
+
+#experience div p,#education div p{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.skillItem{
+	margin: 0px 0px 10px 0px;
+	width: 100%;
+	max-width: 400px;
+	padding: 5px;
+	border-radius: 5px 0px 5px 0px;
+}
+
+#map{
+	width:60%;
+	height:250px;
+	background:lightblue;
+	margin-right: 40px;
+}
+
+
+#slide{
+	background-color: rgba(165, 157, 157,0.5);
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 300px;
+	display: none;
+}
+
+#socialMedia-mobile div{
+	width: 25px;
+	padding-right: 3px;
+}
+.absolute-b-r{
+  position:absolute;
+  bottom:12px;
+  right:12px;
+}
+.logoImage{
+	width: 100%;
+	filter:grayscale(100%);
+}
+
+.details{
+	width: 90px;
+	position: absolute;
+	right: 0px;
+	padding-right:5px;
+	transform: translateY(50%);
+	filter:invert(100%);
+}
+
+
+#mapbox{
+	display: flex;
+}
+
+
+.contact{
+	width: 100%;
+	background-color: wheat;
+}
+.contactHeading{
+	margin: 10px 0px 0px 0px;
+	color: #19a5a3;
+	font-size: 18px;
+	font-weight: bold;
+	color: bold;
+    text-decoration: none;
+}
+
+.contactDetail{
+	font-weight: normal;
+	font-size: 14px;
+}
+
+
+#qualification {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#qualification td, #qualification th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#qualification tr:nth-child(even){background-color: #f2f2f2;}
+
+#qualification tr:hover {background-color: #ddd;}
+
+#qualification th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #596161;
+    color: white;
+}
+
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #021533;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 600px) {
+    
+    #main{
+    	width: 100%;
+    }
+    
+    #socialMedia-mobile{
+    	position: fixed;
+    	top: 0px;
+    	margin: auto;
+    	width: calc(100% - 100px);
+    }
+    #mainMenu-mobile{
+    	display: block;
+    }
+    #mainMenu{
+    	display: none;
+    }
+    #resumeBody{
+    	left: 0px;
+    	width: 100%;
+    }
+    #forMob{
+    	display: block;
+    	text-align:center;
+    	position: relative;
+    	top: 30px;
+    }
+    #forDesktop{
+    	display: none;
+    }
+    #mapbox{
+	display: block;
+   }
+   #map{
+   	width: 100%;
+   }
+   #qualification{
+    	display: none;
+    }
+    
+}
+
+
+@media screen and (max-width: 800px) {
+
+	#intro1{
+		font-size: 35px;
+	}
+
+	#intro2{
+		font-size: 20px;
+	}
+}
+
+
